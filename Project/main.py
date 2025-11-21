@@ -2,10 +2,13 @@
 CIT3003 - Analysis of Algorithms
 Retirement Investment Optimization - Main Application
 
-Author: [Your Name]
-Student ID: [Your ID]
-Group Members: [List names]
-Date: November 2025
+Group Members:
+Shavon Gordon - 2306989
+Halmareo Francis - 2002360
+Rushane Green - 2006930
+Khadejah Benjamin - 2208656
+
+Date: November 21, 2025
 
 This is the main user interface that integrates all retirement simulation algorithms.
 Provides a menu-driven CLI with input validation and formatted output.
@@ -707,4 +710,5 @@ if __name__ == "__main__":
         sys.exit(0)
     except Exception as e:
         print("\n" + Colors.ERROR + f"Unexpected error: {str(e)}" + Colors.RESET)
+
         sys.exit(1)
