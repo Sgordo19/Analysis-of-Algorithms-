@@ -2,10 +2,13 @@
 CIT3003 - Analysis of Algorithms
 Retirement Investment Optimization Using Algorithmic Design
 
-Author: Rushane Green, 
-Student ID: 2006930
-Group Members: 
-Date: November 2025
+Group Members:
+Shavon Gordon - 2306989
+Halmareo Francis - 2002360
+Rushane Green - 2006930
+Khadejah Benjamin - 2208656
+
+Date: November 21, 2025
 
 This module implements retirement investment algorithms using:
 - Iterative simulation for compound growth modeling
@@ -450,4 +453,5 @@ if __name__ == "__main__":
     
     print("\n" + "=" * 70)
     print("TEST SUITE COMPLETE")
+
     print("=" * 70)
