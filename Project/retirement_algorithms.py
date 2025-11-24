@@ -3,10 +3,12 @@ CIT3003 - Analysis of Algorithms
 Retirement Investment Optimization Using Algorithmic Design
 
 Group Members:
+Rushane Green - 2006930
 Shavon Gordon - 2306989
 Halmareo Francis - 2002360
-Rushane Green - 2006930
 Khadejah Benjamin - 2208656
+
+Date: November 21, 2025
 
 Date: November 21, 2025
 
@@ -455,3 +457,4 @@ if __name__ == "__main__":
     print("TEST SUITE COMPLETE")
 
     print("=" * 70)
+
