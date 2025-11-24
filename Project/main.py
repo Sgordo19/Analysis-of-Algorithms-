@@ -3,9 +3,9 @@ CIT3003 - Analysis of Algorithms
 Retirement Investment Optimization - Main Application
 
 Group Members:
-Rushane Green - 2006930
 Shavon Gordon - 2306989
 Halmareo Francis - 2002360
+Rushane Green - 2006930
 Khadejah Benjamin - 2208656
 
 Date: November 21, 2025
@@ -652,11 +652,9 @@ def show_project_info():
         "",
         "DESIGN PARADIGM: Divide-and-Conquer",
         "",
-        f"GROUP: [ Group Members:
-        Rushane Green - 2006930
-        Shavon Gordon - 2306989
-        Halmareo Francis - 2002360
-        Khadejah Benjamin - 2208656]",
+        f"STUDENT: [Your Name Here]",
+        f"ID: [Your ID Here]",
+        f"GROUP: [Group Members]",
     ]
     
     print_result_box("ABOUT THIS APPLICATION", info)
@@ -714,4 +712,3 @@ if __name__ == "__main__":
         print("\n" + Colors.ERROR + f"Unexpected error: {str(e)}" + Colors.RESET)
 
         sys.exit(1)
-
