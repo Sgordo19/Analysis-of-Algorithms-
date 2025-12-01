@@ -1,4 +1,4 @@
-name: Build and deploy Python app to Azure Web App - AOFAGroupProject
+name: Deploy Python app to Azure Web App - AOFAGroupProject
 
 on:
   push:
@@ -7,37 +7,12 @@ on:
   workflow_dispatch:
 
 jobs:
-  build:
+  deploy:
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-
-      - name: Set up Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.12'
-
-      - name: Install dependencies
-        run: |
-          echo "No dependencies to install, using standard library only"
-
-      - name: Upload artifact for deployment
-        uses: actions/upload-artifact@v4
-        with:
-          name: python-app
-          path: .
-
-  deploy:
-    runs-on: ubuntu-latest
-    needs: build
-
-    steps:
-      - name: Download artifact
-        uses: actions/download-artifact@v4
-        with:
-          name: python-app
 
       - name: Login to Azure
         uses: azure/login@v2
