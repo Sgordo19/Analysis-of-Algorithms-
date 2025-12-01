@@ -8,7 +8,7 @@ Halmareo Francis - 2002360
 Rushane Green - 2006930
 Khadejah Benjamin - 2208656
 
-Date: November 21, 2025
+Date: November 30, 2025
 
 This is the main user interface that integrates all retirement simulation algorithms.
 Provides a menu-driven CLI with input validation and formatted output.
@@ -715,3 +715,4 @@ if __name__ == "__main__":
         print("\n" + Colors.ERROR + f"Unexpected error: {str(e)}" + Colors.RESET)
 
         sys.exit(1)
+
