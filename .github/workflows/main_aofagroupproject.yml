@@ -1,4 +1,4 @@
-name: Deploy Python App to Azure Web App - AOFAGroupProject
+name: Build and Deploy Python App to Azure Web App - AOFAGroupProject
 
 on:
   push:
@@ -27,7 +27,7 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt || true
 
-      # 4️⃣ Zip project
+      # 4️⃣ Zip the project for deployment
       - name: Zip project
         run: zip -r release.zip .
 
@@ -38,3 +38,4 @@ jobs:
           app-name: ${{ secrets.AZURE_WEBAPP_NAME }}
           publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
           package: release.zip
+          startup-command: "python projects/main.py"
