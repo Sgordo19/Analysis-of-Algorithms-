@@ -1,4 +1,4 @@
-name: Build and Deploy Python App to Azure Web App - AOFAGroupProject
+name: Deploy Python App to Azure Web App - AOFAGroupProject
 
 on:
   push:
@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # 1️⃣ Checkout your repository
+      # 1️⃣ Checkout repository
       - name: Checkout repository
         uses: actions/checkout@v4
 
@@ -27,7 +27,7 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt || true
 
-      # 4️⃣ Zip the project for deployment
+      # 4️⃣ Zip project
       - name: Zip project
         run: zip -r release.zip .
 
